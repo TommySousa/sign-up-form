@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 .content{
@@ -9,6 +10,7 @@
     flex-flow: row wrap;
     width: 100%;
     height: 100%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .left-part{
@@ -40,7 +42,7 @@
     align-items: center;
     background-color: rgba(27, 27, 27, 0.6);
     font-family: 'Skranji', cursive;
-    font-size: 70px;
+    font-size: 5rem;
     color: white;
 }
 
@@ -54,6 +56,53 @@
     flex-flow: column wrap;
     width: 60vw;
     height: 100vh;
-    
+}
 
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 35vh;
+    background-color:#F9F5F5;
+    padding: 30px;
+}
+
+.form{
+    display: flex;;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    width: 60vw;
+    overflow: hidden;
+}
+.form p{
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.form form{
+    display: flex;
+    flex-flow: row wrap;
+    width: 60vw;
+    gap: 1rem;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding-left: 5px;
+}
+
+.create{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 35vh;
+    background-color:#F9F5F5;
+    padding: 30px;
 }
