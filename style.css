@@ -156,6 +156,11 @@ input:focus{
     transition: 0.5s;
 }
 
+#message{
+    font-size: 0.8rem;
+    padding-top: 2px;
+}
+
 @media only screen and (max-width: 800px) {
     *{
         margin: 0px;
