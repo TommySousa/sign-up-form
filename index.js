@@ -16,3 +16,9 @@ const check = () => {
         } 
     }
 };
+
+const validate = () =>{
+    if (password.value !== cPassword.value){
+        return false
+    }
+}

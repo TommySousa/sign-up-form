@@ -27,7 +27,7 @@
             </div>
             <div class="form">
                 <p>Sign Up</p>
-                <form action="post" id="form">
+                <form action="post" id="form" onsubmit="return validate(event)">
                     <div class="input">
                         <label for="firstName">First Name</label>
                         <input  type="text" name="firstName" id="firstName " required>
