@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
     <title>Sign Up Page</title>
 </head>
 <body> 
@@ -26,41 +27,41 @@
             </div>
             <div class="form">
                 <p>Sign Up</p>
-                <form action="post">
+                <form action="post" id="form">
                     <div class="input">
                         <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <input  type="text" name="firstName" id="firstName " required>
                     </div>
 
                     <div class="input">
                         <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input required type="text" name="lastName" id="lastName" required>
                     </div>
 
                     <div class="input">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input  type="email" name="email" id="email" required>
                     </div>
 
                     <div class="input">
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="text" name="phoneNumber" id="phoneNumber">
+                        <input  type="text" name="phoneNumber" id="phoneNumber" required>
                     </div>
 
-                    <div class="input">
+                    <div class="input ">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password"> 
+                        <input  type="password" name="password" id="password" required onkeyup="check()"> 
                     </div>
                     
-                    <div class="input">
+                    <div class="input ">
                         <label for="cPassword">Confirm Password</label>
-                        <input type="password" name="cPassword" id="cPassword">
+                        <input  type="password" name="cPassword" id="cPassword" required onkeyup="check()" >
                     </div>
                 
                 </form>
             </div>
             <div class="create">
-                <button class="submit-button" type="submit">Create Account</button>
+                <button value="submit" form="form" class="submit-button" type="submit">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
                 
             </div>
